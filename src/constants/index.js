@@ -20,9 +20,14 @@ import {
     tesla,
     shopify,
     carrent,
+    threejs,
     jobit,
     tripguide,
-    threejs,
+    navodaya,
+    hcltech,
+    techbee,
+    corona
+
 } from "../assets";
 
 
@@ -165,55 +170,105 @@ const technologies = [
 
 const experiences = [
     {
-        title: "React.js Developer",
-        company_name: "Starbucks",
-        icon: starbucks,
+        title: "Before 10th standard...",
+        company_name: "Navodaya",
+        icon: navodaya,
+        iconBg: "#ffffff",
+        date: "before 2018",
+        points: [
+            `**Arduino/Raspberry Pi Projects**
+  - Electronic projects
+  - Robots and a Drone`,
+
+        ],
+    },
+    {
+        title: "11th and 12th standard...",
+        company_name: "Navodaya",
+        icon: navodaya,
+        iconBg: "#ffffff",
+        date: "2018 - 2020",
+        points: [
+            `**Learning C/C++**`,
+            `**Exhibition Projects**
+  - Raspberry Pi & GSM-based Automatic Accident Detection System
+  - AI-enabled Plant Monitoring System (IBM's Watson model)`,
+
+        ],
+    },
+    {
+        title: "After 12th",
+        company_name: "none",
+        icon: corona,
         iconBg: "#383E56",
-        date: "March 2020 - April 2021",
+        date: "2020 - 2021",
         points: [
-            "Developing and *web applications* using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            `**Learning X86 ASM**`,
+            `**C++ Frameworks**
+  - OpenGL, QT`,
+            `**JavaScript**
+  - P5JS and Processing 
+  - Shared drawing app with expressjs(nodejs)
+  - Threejs through P5JS`,
+
         ],
     },
     {
-        title: "React Native Developer",
-        company_name: "Tesla",
-        icon: tesla,
-        iconBg: "#E6DEDD",
-        date: "Jan 2021 - Feb 2022",
+        title: "HCL Techbee program",
+        company_name: "HCL TSS",
+        icon: techbee,
+        iconBg: "#5B23C2",
+        date: "2020 - 2022",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            `**HCL TechBee Program**
+  - Java, Oracle Database, Linux`,
+            `**Cyber Security**
+  - CTF Challenges, Wireshark, Networking`,
+            `**Java Projects**
+  - Web-based Chatting/Video Conferencing App (WebRTC)
+  - React and NextJS
+  - React Video Sharing Platform (YouTube API)`,
+            `**Arch Linux**
+  - Primary Development System`,
         ],
     },
     {
-        title: "Web Developer",
-        company_name: "Shopify",
-        icon: shopify,
-        iconBg: "#383E56",
-        date: "Jan 2022 - Jan 2023",
+        title: "Becoming Software Engineer at HCL...",
+        company_name: "HCLTech",
+        icon: hcltech,
+        iconBg: "#5B23C2",
+        date: "2022 - 2023",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            `**Job at Support Role**`,
+            `**Open Source Contributions**`,
+            `**Linux Skills**
+  - Switched to Fedora
+  - Developed and Maintained Neovim Plugin ("hologram-latex-preview")
+  - Contributed to *Lunarvim* Neovim Distribution`,
+            `**Visual Basics for Applications (VBA)**
+  - Excel Macros`,
+            `**JavaScript**
+  - Bookmarklets for Task Automation
+  - ServiceNow Clone (Experimentation)`,
         ],
     },
     {
-        title: "Full stack Developer",
-        company_name: "Meta",
-        icon: meta,
-        iconBg: "#E6DEDD",
+        title: "2023 - current",
+        company_name: "HCLTech",
+        icon: hcltech,
+        iconBg: "#5B23C2",
         date: "Jan 2023 - Present",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            `**Selenium and SMTP**
+  - Deployed/Maintained 20+ Selenium (Python) Tests`,
+            `**Web Frameworks**
+  - Learned Svelte and Sveltekit`,
+            `**Rust**
+  - Created Small CLI Applications`,
+            `**PyQT**
+  - Created Various GUI Apps`,
+            `**NixOS and Declarative Programming**
+  - Learned and Configured NixOS`,
         ],
     },
 ];
