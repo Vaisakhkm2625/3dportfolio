@@ -23,7 +23,6 @@ const TechCard = ({ index, title, icon }) => (
                 className='bg-tertiary rounded-[20px]  py-5 px-12 min-h-[80px] flex justify-evenly items-center flex-col'
             >
 
-
                 <img
                     src={icon}
                     alt='web-development'
