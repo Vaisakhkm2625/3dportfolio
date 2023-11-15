@@ -6,6 +6,7 @@ import {
 import { motion } from "framer-motion";
 
 import "react-vertical-timeline-component/style.min.css";
+import Markdown from "react-markdown";
 
 import { styles } from "../styles";
 import { experiences } from "../constants";
@@ -48,7 +49,7 @@ const ExperienceCard = ({ experience }) => {
                         key={`experience-point-${index}`}
                         className='text-white-100 text-[14px] pl-1 tracking-wider'
                     >
-                        {point}
+                        <Markdown>{point}</Markdown>
                     </li>
                 ))}
             </ul>
