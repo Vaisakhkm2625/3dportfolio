@@ -25,8 +25,6 @@ import {
     threejs,
 } from "../assets";
 
-import IconCss3 from 'react-devicon/css3/plain'
-
 
 export const navLinks = [
     {
