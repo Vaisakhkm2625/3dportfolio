@@ -6,7 +6,7 @@ import {
     javascript,
     typescript,
     html,
-    css,
+    //css,
     reactjs,
     redux,
     tailwind,
@@ -25,6 +25,9 @@ import {
     threejs,
 } from "../assets";
 
+import IconCss3 from 'react-devicon/css3/plain'
+
+
 export const navLinks = [
     {
         id: "about",
@@ -42,32 +45,58 @@ export const navLinks = [
 
 const services = [
     {
-        title: "Web Developer",
+        title: "Full Stack Development",
         icon: web,
     },
     {
-        title: "React Native Developer",
-        icon: mobile,
-    },
-    {
-        title: "Backend Developer",
+        title: "Selenium Testing",
         icon: backend,
     },
     {
-        title: "Content Creator",
+        title: "PyQt App Development",
+        icon: mobile,
+    },
+    {
+        title: "Linux Server Management",
         icon: creator,
     },
 ];
 
 const technologies = [
     {
+        name: "linux",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
+    },
+    {
+        name: "nixos",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nixos/nixos-original.svg",
+    },
+    {
+        name: "docker",
+        icon: docker,
+    },
+    {
+        name: "oracledb",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg",
+    },
+    {
+        name: "java",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+
+    },
+    {
+        name: "python",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+    },
+    {
         name: "HTML 5",
-        icon: html,
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
     },
     {
         name: "CSS 3",
-        icon: css,
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
     },
+
     {
         name: "JavaScript",
         icon: javascript,
@@ -76,29 +105,23 @@ const technologies = [
         name: "TypeScript",
         icon: typescript,
     },
+
+    {
+        name: "Svelte",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/svelte/svelte-original.svg",
+    },
     {
         name: "React JS",
         icon: reactjs,
     },
     {
-        name: "Redux Toolkit",
-        icon: redux,
-    },
-    {
         name: "Tailwind CSS",
-        icon: tailwind,
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
     },
+
     {
         name: "Node JS",
         icon: nodejs,
-    },
-    {
-        name: "MongoDB",
-        icon: mongodb,
-    },
-    {
-        name: "Three JS",
-        icon: threejs,
     },
     {
         name: "git",
@@ -109,9 +132,24 @@ const technologies = [
         icon: figma,
     },
     {
-        name: "docker",
-        icon: docker,
+        name: "inkscape",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/inkscape/inkscape-original.svg",
     },
+    {
+        name: "firebase",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
+    },
+    {
+        name: "mysql",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+    },
+    {
+        name: "vim",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vim/vim-original.svg",
+    },
+
+
+
 ];
 
 const experiences = [
