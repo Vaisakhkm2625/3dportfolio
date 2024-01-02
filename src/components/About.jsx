@@ -48,12 +48,11 @@ const About = () => {
                 className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
             >
                 I am a skilled software developer with expertise in web frameworks
-                like Next.js, Sveltekit, and the Java Spring framework. Additionally,
-                I have experience with Oracle database management and Linux server maintenance.
+                like the Java Spring framework and Next.js, Sveltekit. Additionally,
+                I have experience with Oracle database management (PL/SQL,SQL) and Linux/Windows server maintenance.
                 Passionate about Linux and free software development, I am a quick learner and
                 enjoy collaborating with others to create efficient, scalable, and user-friendly
                 solutions that solve real-world problems.
-                Let's work together to bring your ideas to life!
             </motion.p>
 
             <div className='mt-20 flex flex-wrap gap-10'>

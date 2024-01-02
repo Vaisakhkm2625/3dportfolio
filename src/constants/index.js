@@ -48,16 +48,16 @@ export const navLinks = [
 
 const services = [
     {
-        title: "Full Stack Development",
+        title: "Full Stack Development - Java",
         icon: web,
+    },
+    {
+        title: "Oracle Database Management - PL/SQL,SQl",
+        icon: backend,
     },
     {
         title: "Selenium Testing",
         icon: backend,
-    },
-    {
-        title: "PyQt App Development",
-        icon: mobile,
     },
     {
         title: "Linux Server Management",
@@ -66,6 +66,15 @@ const services = [
 ];
 
 const technologies = [
+    {
+        name: "java",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+
+    },
+    {
+        name: "oracledb",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg",
+    },
     {
         name: "linux",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
@@ -79,15 +88,6 @@ const technologies = [
         icon: docker,
     },
     {
-        name: "oracledb",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg",
-    },
-    {
-        name: "java",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
-
-    },
-    {
         name: "python",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
     },
@@ -99,7 +99,6 @@ const technologies = [
         name: "CSS 3",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
     },
-
     {
         name: "JavaScript",
         icon: javascript,
@@ -307,7 +306,7 @@ const projects = [
             "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
         tags: [
             {
-                name: "react",
+                name: "java",
                 color: "blue-text-gradient",
             },
             {
