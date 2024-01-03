@@ -7,6 +7,7 @@ import { Tilt } from 'react-tilt';
 import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "../utils/motion";
 
+import { styles } from "../styles";
 
 const TechCard = ({ index, title, icon }) => (
     <Tilt className='xs:w-[180px] w-full'>
@@ -40,12 +41,22 @@ const TechCard = ({ index, title, icon }) => (
 
 const Tech = () => {
     return (
-        <div className='flex flex-row flex-wrap justify-center gap-10'>
-            {technologies.map((technology) => (
-                <div key={technology.name}>
-                    <TechCard icon={technology.icon} />
-                </div>
-            ))}
+        <div>
+            <motion.div variants={textVariant}>
+                <p className={`${styles.sectionSubText} text-center`}>
+                    Technologies i am familer with
+                </p>
+                <h2 className={`${styles.sectionHeadText} text-center`}>
+                    Technologies
+                </h2>
+            </motion.div>
+            <div className='mt-20 flex flex-row flex-wrap justify-center gap-10'>
+                {technologies.map((technology) => (
+                    <div key={technology.name}>
+                        <TechCard icon={technology.icon} />
+                    </div>
+                ))}
+            </div>
         </div>
     )
 }
