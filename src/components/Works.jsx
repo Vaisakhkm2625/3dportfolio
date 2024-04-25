@@ -14,6 +14,7 @@ const ProjectCard = ({
     description,
     tags,
     image,
+    image_previews,
     source_code_link,
 }) => {
     return (
@@ -65,26 +66,15 @@ const ProjectCard = ({
                     </div>
                 </Tilt>
                 <div className="bg-tertiary grid grid-cols-2 gap-4 p-5 w-full rounded-2xl">
-                    <img
-                        src={image}
-                        alt='project_image'
-                        className='rounded-2xl col-span-1'
-                    />
-                    <img
-                        src={image}
-                        alt='project_image'
-                        className='rounded-2xl col-span-1'
-                    />
-                    <img
-                        src={image}
-                        alt='project_image'
-                        className='rounded-2xl col-span-1'
-                    />
-                    <img
-                        src={image}
-                        alt='project_image'
-                        className='rounded-2xl col-span-1'
-                    />
+                    {image_previews.map((image, index) => (
+                        <img
+                            key={`image-${index}`}
+                            src={image}
+                            alt='project_image'
+                            className='rounded-2xl col-span-1'
+                        />
+                    ))}
+
                 </div>
             </div>
         </motion.div>

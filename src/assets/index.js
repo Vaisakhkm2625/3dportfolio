@@ -29,6 +29,11 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+//import winsome from "./winsome.png";
+import winsome_chat1 from "./winsome_chat1.png";
+import winsome_chat2 from "./winsome_chat2.png";
+import winsome_calling from "./winsome_calling.png";
+import winsome_signup from "./winsome_signup.png";
 
 import navodaya from "./navodaya.png";
 import corona from "./corona.png";
@@ -62,6 +67,11 @@ export {
     starbucks,
     tesla,
     carrent,
+    //winsome,
+    winsome_chat1,
+    winsome_chat2,
+    winsome_calling,
+    winsome_signup,
     jobit,
     tripguide,
     navodaya,

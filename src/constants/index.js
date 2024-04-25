@@ -20,6 +20,10 @@ import {
     tesla,
     shopify,
     carrent,
+    winsome_signup,
+    winsome_calling,
+    winsome_chat1,
+    winsome_chat2,
     threejs,
     jobit,
     tripguide,
@@ -301,9 +305,9 @@ const testimonials = [
 
 const projects = [
     {
-        name: "Car Rent",
+        name: "Chatting App",
         description:
-            "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+            "Web-based platform that allows users to chat with friends, providing a convenient and efficient solution for transportation needs.",
         tags: [
             {
                 name: "java",
@@ -318,7 +322,10 @@ const projects = [
                 color: "pink-text-gradient",
             },
         ],
-        image: carrent,
+        image: winsome_chat1,
+        image_previews: [
+            winsome_signup, winsome_calling, winsome_chat1, winsome_chat2,
+        ],
         source_code_link: "https://github.com/",
     },
     {
@@ -340,6 +347,9 @@ const projects = [
             },
         ],
         image: jobit,
+        image_previews: [
+            winsome_chat1, jobit, winsome_chat1, jobit
+        ],
         source_code_link: "https://github.com/",
     },
     {
@@ -361,6 +371,9 @@ const projects = [
             },
         ],
         image: tripguide,
+        image_previews: [
+            winsome_chat1, carrent, winsome_chat1
+        ],
         source_code_link: "https://github.com/",
     },
 ];
