@@ -51,6 +51,7 @@ const ComputerCanvas = () => {
         };
     }, []);
 
+    //TODO: frameLoop not recogized 
     return (
         <Canvas
             frameLoop="demand"
