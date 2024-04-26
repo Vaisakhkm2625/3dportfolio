@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 
@@ -7,6 +7,7 @@ import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
+import { after } from "underscore";
 
 const ProjectCard = ({
     index,
@@ -17,6 +18,48 @@ const ProjectCard = ({
     image_previews,
     source_code_link,
 }) => {
+    const [isImageLoaded, setIsImageLoaded] = useState(false);
+    const [arePreviewsLoaded, setArePreviewsLoaded] = useState(false);
+    //const [isLoaded, setIsLoaded] = useState(false);
+    /* useEffect(() => {
+         const img = new Image();
+         img.onload = () => {
+             setIsLoaded(true);
+         };
+         img.src = image;
+     }, [image]);
+ 
+     if (!isLoaded) {
+         return null; // or render a placeholder/loading state
+     } */
+
+
+    const handleImageLoad = () => {
+        setIsImageLoaded(true);
+    };
+
+    const handlePreviewsLoad = () => {
+        setArePreviewsLoaded(true);
+    };
+
+
+    // from article
+    const [loading, setLoading] = useState(true);
+    const onComplete = after(image_previews.length, () => {
+        setLoading(false);
+        console.log("loaded");
+    });
+
+
+    useEffect(() => {
+        //preloading image
+        image_previews.forEach((face) => {
+            const img = new Image();
+            img.src = face;
+        });
+    }, []);
+
+
     return (
         <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
             <div className="flex mt-20 gap-7">
@@ -29,10 +72,21 @@ const ProjectCard = ({
                     className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
                 >
                     <div className='relative w-full h-[230px]'>
+                        {/*isImageLoaded ? (
+                            <img
+                                src={image}
+                                alt='project_image'
+                                className='w-full h-full object-cover rounded-2xl'
+                            />
+                        ) : (
+                            <div className="w-full h-full bg-gray-200 rounded-2xl"></div>
+                        ) */ }
+
                         <img
                             src={image}
                             alt='project_image'
                             className='w-full h-full object-cover rounded-2xl'
+                            onLoad={handleImageLoad}
                         />
 
                         <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
@@ -66,14 +120,49 @@ const ProjectCard = ({
                     </div>
                 </Tilt>
                 <div className="bg-tertiary grid grid-cols-2 gap-4 p-5 w-full rounded-2xl">
+                    {/*arePreviewsLoaded ? (
+                        image_previews.map((image, index) => (
+                            <img
+                                key={`image-${index}`}
+                                src={image}
+                                alt='project_image_preview'
+                                className='rounded-2xl col-span-1'
+                            />
+                        ))
+                    ) : (
+                        image_previews.map((_, index) => (
+                            <div
+                                key={`placeholder-${index}`}
+                                className='w-full h-full bg-gray-200 flex justify-center items-center'
+                            >
+                                Preview Loading...
+                            </div>
+                        ))
+                    )*/}
+                    {/*image_previews.map((image, index) => (
+                        <img
+                            key={`image-${index}`}
+                            src={image}
+                            alt='project_image'
+                            className='rounded-2xl col-span-1'
+                            onLoad={handlePreviewsLoad}
+                        />
+                    )) */}
+
+                    {console.log(loading) && loading && <span>Loading ...</span>}
+
                     {image_previews.map((image, index) => (
                         <img
                             key={`image-${index}`}
                             src={image}
                             alt='project_image'
                             className='rounded-2xl col-span-1'
+                            onLoad={onComplete}
+                            onError={onComplete}
                         />
                     ))}
+
+
 
                 </div>
             </div>
