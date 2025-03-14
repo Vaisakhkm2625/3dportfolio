@@ -131,8 +131,9 @@ const Contact = () => {
 
                 <Suspense fallback={<div>
                     Loading model
-                </div>}></Suspense>
-                <EarthCanvas />
+                </div>}>
+                    <EarthCanvas />
+                </Suspense>
             </motion.div>
         </div>
     );
