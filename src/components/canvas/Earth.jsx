@@ -4,13 +4,39 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
 
+/*
 const Earth = () => {
+    const [earth, setEarth] = useState(null);
+    const [error, setError] = useState(false);
+
+    useEffect(() => {
+        new GLTFLoader().load(
+            "./planet/scene.gltf",
+            (gltf) => setEarth(gltf.scene),
+            undefined,
+            (err) => {
+                console.error("Failed to load Earth model:", err);
+                setError(true);
+            }
+        );
+    }, []);
+};
+
+*/
+
+
+
+const Earth = () => {
+
     const earth = useGLTF("./planet/scene.gltf");
 
     return (
         <primitive object={earth.scene} scale={2.5} position-y={0} rotation-y={0} />
     );
 };
+
+
+
 
 const EarthCanvas = () => {
     return (
@@ -42,3 +68,6 @@ const EarthCanvas = () => {
 };
 
 export default EarthCanvas;
+
+
+
